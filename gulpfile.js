@@ -58,7 +58,7 @@ gulp.task( 'jshint', function() {
 // Concatenates all files that it finds in the manifest
 // and creates two versions: normal and minified.
 // It's dependent on the jshint task to succeed.
-gulp.task( 'scripts', ['jshint'], function() {
+gulp.task( 'scripts', gulp.series('jshint', function() {
   return gulp.src( './js/manifest.js' )
     .pipe( include() )
     .pipe( rename( { basename: 'scripts' } ) )
@@ -70,7 +70,7 @@ gulp.task( 'scripts', ['jshint'], function() {
     .pipe( gulp.dest( './js/dist' ) )
     .pipe(notify({ message: 'scripts task complete' }))
     .pipe( livereload() );
-} );
+} ));
 
 // Different options for the Sass tasks
 var options = {};
@@ -121,23 +121,23 @@ gulp.task('images', function() {
  
  
 // Start the livereload server and watch files for change
-gulp.task( 'watch', ['sass'], function() {
+gulp.task( 'watch', gulp.series('sass', function() {
   livereload.listen();
  
-  // don't listen to whole js folder, it'll create an infinite loop
-  gulp.watch( [ './js/**/*.js', '!./js/dist/*.js' ], [ 'scripts' ] )
- 
-  gulp.watch( './sass/**/*.scss', ['sass', 'sass-min'] );
 
-  gulp.watch('./images/**/*', ['images']);
+  gulp.watch( [ './js/**/*.js', '!./js/dist/*.js' ], gulp.series('scripts') )
+ 
+  gulp.watch( './sass/**/*.scss', gulp.series('sass', 'sass-min') );
+
+  gulp.watch('./images/**/*', gulp.series('images'));
  
   gulp.watch( './**/*.php' ).on( 'change', function( file ) {
     // reload browser whenever any PHP file changes
     livereload.changed( file );
   } );
-} );
+} ));
  
  
-gulp.task( 'default', ['watch'], function() {
+gulp.task( 'default', gulp.series('watch', function() {
  // Does nothing in this task, just triggers the dependent 'watch'
-} );
+}));
