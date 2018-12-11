@@ -46,6 +46,7 @@ https://raw.githubusercontent.com/google/material-design-lite/mdl-1.x/LICENSE
 /*--------------------------------------------------------------
 # Typography
 --------------------------------------------------------------*/
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600");
 body,
 button,
 input,
@@ -461,6 +462,9 @@ object {
 /* Primary gadient */
 /* Secondary */
 /* Thirdary */
+/*--------------------------------------------------------------
+# PP Chile theme customisations
+--------------------------------------------------------------*/
 /*--------------------------------------------------------------
 # Material design lite
 --------------------------------------------------------------*/
@@ -11414,7 +11418,7 @@ header #logo, .mdl-layout__drawer #logo {
   font-family: 'GehenSansCondensed';
   font-size: 29px;
   padding: 1px 0 0 60px;
-  color: #0073AE;
+  color: #4D1DB5;
   text-decoration: none;
   font-weight: bold;
   line-height: 29px; }
@@ -11427,6 +11431,486 @@ header #logo, .mdl-layout__drawer #logo {
     line-height: 33px; }
   header #logo .country, .mdl-layout__drawer #logo .country {
     font-family: 'GehenSans';
+    display: block;
+    margin-top: -6px;
+    color: #333;
+    font-size: .65em; }
+
+/*
+  Drawer logo positioning section
+*/
+.mdl-layout__drawer #drawer_close_button {
+  margin: 16px 0 0 24px;
+  position: absolute;
+  z-index: 1000; }
+  .mdl-layout__drawer #drawer_close_button:hover {
+    color: #616161; }
+
+.mdl-layout__drawer .mdl-layout-title {
+  margin: 4px 40px 0 40px; }
+
+@media (max-width: 840px) {
+  .mdl-layout .mdl-layout__header-row {
+    padding-left: 50px; }
+  .mdl-layout .mdl-layout__drawer #drawer_close_button {
+    margin: 16px 0 0 8px; }
+  .mdl-layout .mdl-layout__drawer .mdl-layout-title {
+    margin: 0px 24px 0 8px; } }
+
+.mdl-layout__drawer {
+  background-color: #fff; }
+  .mdl-layout__drawer.is-visible {
+    width: auto; }
+  .mdl-layout__drawer span.mdl-layout-title {
+    padding: 0 40px; }
+  .mdl-layout__drawer ul.mdl-navigation {
+    padding: 0; }
+  .mdl-layout__drawer .mdl-navigation ul.sub-menu {
+    padding: 0; }
+    .mdl-layout__drawer .mdl-navigation ul.sub-menu li {
+      list-style: none; }
+      .mdl-layout__drawer .mdl-navigation ul.sub-menu li hr {
+        margin: 0 32px;
+        color: #eee; }
+      .mdl-layout__drawer .mdl-navigation ul.sub-menu li a {
+        padding-left: 32px; }
+  .mdl-layout__drawer .mdl-navigation .mdl-navigation__link {
+    padding: 12px 16px;
+    font-weight: 500;
+    font-family: "Roboto-Medium", "Roboto", "Helvetica", "Arial", sans-serif;
+    color: #000; }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link.is-active {
+      background-color: #CCCCCC; }
+    .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.fa, .mdl-layout__drawer .mdl-navigation .mdl-navigation__link i.dashicons {
+      color: #878787; }
+  .mdl-layout__drawer .mdl-navigation .menu-item i._mi {
+    font-size: 1.6em;
+    margin-right: 36px; }
+
+/*
+  END: Drawer logo positioning section
+*/
+@media (min-width: 1024px) {
+  .mdl-layout {
+    min-width: 1240px; } }
+
+@media (max-width: 1024px) {
+  .mdl-layout__header-row {
+    padding-right: 0 !important; } }
+
+@media (max-width: 840px) {
+  .mdl-layout .mdlwp-search-box {
+    right: 0; } }
+
+header .mdl-navigation .mdl-navigation__link {
+  cursor: pointer; }
+
+header .mdl-navigation ul.mdl-menu {
+  padding: 0; }
+  header .mdl-navigation ul.mdl-menu li {
+    line-height: 40px; }
+    header .mdl-navigation ul.mdl-menu li.is-hr-li {
+      height: auto; }
+      header .mdl-navigation ul.mdl-menu li.is-hr-li hr {
+        margin: 0; }
+    header .mdl-navigation ul.mdl-menu li a, header .mdl-navigation ul.mdl-menu li a:hover, header .mdl-navigation ul.mdl-menu li a:visited, header .mdl-navigation ul.mdl-menu li a.is-active {
+      border-bottom: 0px solid transparent;
+      line-height: 40px; }
+
+header .mdl-navigation .mdl-navigation__link {
+  border-bottom: 3px solid transparent;
+  padding-top: 1px;
+  padding-left: 16px;
+  padding-right: 16px;
+  line-height: 60px; }
+  header .mdl-navigation .mdl-navigation__link:hover, header .mdl-navigation .mdl-navigation__link.is-active {
+    border-bottom: 3px solid #304C7A;
+    text-decoration: none; }
+
+header .pir-header-extra {
+  margin-right: 24px;
+  margin-left: 24px; }
+
+header .mdlwp-search-box .mdl-textfield__input {
+  border-bottom-color: #616161; }
+
+header .mdlwp-search-box {
+  padding: 13px 13px 10px 0;
+  top: 0px;
+  height: 55px;
+  background-color: #fff; }
+  header .mdlwp-search-box.is-dirty, header .mdlwp-search-box.is-focused {
+    margin-left: -240px; }
+  header .mdlwp-search-box .mdl-button--icon {
+    top: 12px; }
+
+@media (min-width: 0px) and (max-width: 835px) {
+  .mdl-layout--medium-screen-only {
+    display: none; } }
+
+@media (min-width: 0px) and (max-width: 665px) {
+  .mdlwp-search-box.is-dirty, .mdlwp-search-box.is-focused {
+    left: 0px;
+    margin-left: 0px !important;
+    position: absolute;
+    padding-left: 88px; }
+    .mdlwp-search-box.is-dirty.mdl-textfield--expandable, .mdlwp-search-box.is-focused.mdl-textfield--expandable {
+      width: 100%; }
+    .mdlwp-search-box.is-dirty.mdl-textfield--align-right, .mdlwp-search-box.is-focused.mdl-textfield--align-right {
+      text-align: center; } }
+
+.mdl-layout__header-row {
+  padding: 0 80px 0 80px;
+  background-color: #fff; }
+
+a.pir-button-donate {
+  background-color: #ad2b2b;
+  color: #fff; }
+  a.pir-button-donate:hover, a.pir-button-donate:active, a.pir-button-donate:focus:not(:active) {
+    background-color: #ad2b2b; }
+
+a.pir-button-join {
+  background-color: #f6891f;
+  color: #fff; }
+  a.pir-button-join:hover, a.pir-button-join:active, a.pir-button-join:focus:not(:active) {
+    background-color: #f6891f; }
+
+a.pir-button-members {
+  background-color: #304C7A;
+  color: #fff; }
+  a.pir-button-members:hover, a.pir-button-members:active, a.pir-button-members:focus:not(:active) {
+    background-color: #304C7A; }
+
+/* Buttons with bootstrap style colours */
+a.pir-button-success {
+  background-color: #009688;
+  color: #fff; }
+  a.pir-button-success:hover, a.pir-button-success:active, a.pir-button-success:focus:not(:active) {
+    background-color: #009688; }
+
+a.pir-button-info {
+  background-color: #03A9F4;
+  color: #fff; }
+  a.pir-button-info:hover, a.pir-button-info:active, a.pir-button-info:focus:not(:active) {
+    background-color: #03A9F4; }
+
+a.pir-button-warning {
+  background-color: #FF9800;
+  color: #fff; }
+  a.pir-button-warning:hover, a.pir-button-warning:active, a.pir-button-warning:focus:not(:active) {
+    background-color: #FF9800; }
+
+a.pir-button-danger {
+  background-color: #F44336;
+  color: #fff; }
+  a.pir-button-danger:hover, a.pir-button-danger:active, a.pir-button-danger:focus:not(:active) {
+    background-color: #F44336; }
+
+/* Site main cards */
+.site-main .mdl-card__media {
+  height: auto; }
+  .site-main .mdl-card__media.has-feature-image {
+    height: 280px; }
+
+.entry-content {
+  padding: 0 16px;
+  width: 100%;
+  box-sizing: border-box; }
+  .entry-content p {
+    width: 100%; }
+  .entry-content .meta {
+    width: 100%;
+    padding: 16px 0 0 0; }
+
+article.type-page .entry-content {
+  padding: 0; }
+
+.pir-card {
+  width: 100%; }
+  .pir-card .mdl-card__title {
+    color: #fff;
+    background-color: #89c3e5; }
+
+.pir-card__data-retention .mdl-card__title {
+  background: url("./img/spy.png") center/cover #000; }
+
+.pir-card__tall-ship .mdl-card__title {
+  background: url("./img/ship.png") center/cover #000; }
+
+.pir-card__we-are .mdl-card__title {
+  line-height: 1;
+  background-color: #375688;
+  padding-bottom: 8px; }
+  .pir-card__we-are .mdl-card__title h2 {
+    font-size: 20px;
+    color: #fff;
+    display: inline-block; }
+
+.pir-card__we-are .mdl-card__supporting-text {
+  width: 100%;
+  padding-top: 0;
+  background-color: #375688;
+  color: #fff; }
+  .pir-card__we-are .mdl-card__supporting-text ul {
+    font-size: 1.1em;
+    margin: 0 0 0 0;
+    padding-left: 20px; }
+
+.pir-card__quick-donate .mdl-card__supporting-text p {
+  margin: 0; }
+
+.pir-card__quick-donate .mdl-grid {
+  padding-bottom: 0;
+  padding-left: 0;
+  padding-right: 0; }
+
+.pir-card__discuss .mdl-card__title {
+  padding: 0;
+  background: url("./img/discuss.png") right #89c3e5 no-repeat;
+  background-position: 100% 50%;
+  background-size: 70%; }
+  .pir-card__discuss .mdl-card__title h2 {
+    width: 100%;
+    vertical-align: bottom;
+    display: table-cell;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 16px 16px; }
+
+.pir-button.pir-button-block {
+  display: block;
+  min-width: inherit; }
+
+@media (min-width: 840px) {
+  .hp-row-one .mdl-card {
+    height: 260px; }
+  .hp-row-two .mdl-card {
+    height: 280px; } }
+
+.page-content {
+  padding: 24px 24px; }
+
+.nc .mdl-cell--3-col {
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+  @media (max-width: 840px) {
+    .nc .mdl-cell--3-col {
+      width: calc(100% - 16px); } }
+  .nc .mdl-cell--3-col img {
+    width: auto;
+    height: auto;
+    min-width: 200px;
+    min-height: 200px;
+    margin-bottom: 0px; }
+
+@media (min-width: 840px) {
+  .nc .nc-bio {
+    margin-left: 36px; } }
+
+.nc .nc-bio h4 {
+  margin-bottom: 8px; }
+
+.nc .nc-bio h5 {
+  margin-top: 0; }
+
+.nc img {
+  height: auto;
+  max-width: 200px;
+  margin-top: 24px;
+  border-radius: 50%; }
+
+.centre, .center {
+  text-align: center; }
+
+.hero {
+  text-align: center;
+  position: relative;
+  /* Medium devices (desktops, 992px and up) */
+  /* Large devices (large desktops, 1200px and up) */ }
+  .hero.hero-congress {
+    background: url(./img/hero_congress_voting.jpg);
+    background-color: rgba(0, 0, 0, 0.35); }
+  .hero.hero-broken-politics {
+    background: url(./img/hero_russellstreet_26995633782.jpg); }
+    .hero.hero-broken-politics .mdl-grid {
+      background-color: rgba(0, 0, 0, 0.65); }
+  .hero.hero-broken-politics, .hero.hero-congress {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center; }
+  .hero .mdl-grid {
+    padding-bottom: 36px; }
+  .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
+    color: #fff;
+    margin-top: 0; }
+  @media (max-width: 768px) {
+    .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
+      margin-bottom: 8px; }
+    .hero h1 {
+      font-size: 35px; }
+    .hero h2 {
+      font-size: 25px; }
+    .hero h3 {
+      font-size: 20px; }
+    .hero h4 {
+      font-size: 15px; } }
+  @media (min-width: 769px) and (max-width: 992px) {
+    .hero .mdl-grid {
+      padding: 24px 12px; }
+    .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
+      margin-bottom: 16px; }
+    .hero h1 {
+      font-size: 40px; }
+    .hero h2 {
+      font-size: 30px; }
+    .hero h3 {
+      font-size: 25px; }
+    .hero h4 {
+      font-size: 15px; } }
+  @media (min-width: 993px) {
+    .hero .mdl-grid {
+      padding: 40px 20px; }
+    .hero h1, .hero h2, .hero h3, .hero h4, .hero h5, .hero h6 {
+      margin-bottom: 24px; }
+    .hero h1 {
+      font-size: 55px; }
+    .hero h2 {
+      font-size: 45px; }
+    .hero h3 {
+      font-size: 35px; }
+    .hero h4 {
+      font-size: 25px; } }
+
+.pir-card-image {
+  margin: 16px;
+  max-width: 100%;
+  position: relative; }
+  @media (max-width: 400px) {
+    .pir-card-image {
+      margin: 4px; } }
+  .pir-card-image .mdl-card {
+    width: auto;
+    margin-bottom: 0; }
+  .pir-card-image a.below, .pir-card-image img.below {
+    clear: both; }
+  .pir-card-image img {
+    float: left; }
+  .pir-card-image > .mdl-card__actions {
+    height: auto;
+    padding: 16px;
+    background: rgba(0, 0, 0, 0.6); }
+  .pir-card-image .pir-card-image__filename {
+    float: left;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 500;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 30; }
+
+.mdl-textfield__icon {
+  width: 32px;
+  text-align: center;
+  position: absolute;
+  line-height: 1.5; }
+
+.mdl-textfield.is-disabled .mdl-textfield__icon {
+  color: rgba(0, 0, 0, 0.26) !important; }
+
+.mdl-textfield__icon ~ * {
+  margin-left: 32px;
+  width: calc(100% - 48px); }
+
+.mdl-textfield.is-invalid .mdl-textfield__icon {
+  color: #de3226 !important; }
+
+address {
+  font-size: 14px;
+  line-height: 24px; }
+
+.mdl-card__supporting-text .mdl-card__title {
+  padding: 0; }
+
+/*--------------------------------------------------------------
+# Page template tweaks
+--------------------------------------------------------------*/
+.no-results .page-title {
+  margin-left: 24px;
+  margin-right: 24px; }
+
+.cc-credit {
+  font-size: 12px;
+  color: #aaa;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.3); }
+
+/*--------------------------------------------------------------
+# Upcoming events widget fixes
+--------------------------------------------------------------*/
+.pir-card__upcoming-events {
+  z-index: 10000;
+  overflow: inherit;
+  max-height: 280px; }
+  @media (max-width: 840px) {
+    .pir-card__upcoming-events {
+      height: 985px !important; } }
+  .pir-card__upcoming-events .mdl-card__supporting-text {
+    overflow: inherit;
+    height: 100%;
+    max-height: 220.5px;
+    width: 100%;
+    padding: 0; }
+    .pir-card__upcoming-events .mdl-card__supporting-text .ai1ec-agenda-widget-view {
+      height: 100%;
+      display: flex;
+      flex-flow: column; }
+      .pir-card__upcoming-events .mdl-card__supporting-text .ai1ec-agenda-widget-view .ai1ec-no-results, .pir-card__upcoming-events .mdl-card__supporting-text .ai1ec-agenda-widget-view .ai1ec-results {
+        flex-basis: auto;
+        flex-grow: 1;
+        flex-shrink: 1;
+        overflow-y: scroll;
+        max-height: 282px; }
+      .pir-card__upcoming-events .mdl-card__supporting-text .ai1ec-agenda-widget-view .ai1ec-subscribe-buttons-widget {
+        width: 100%;
+        padding: 8px; }
+
+.pir-card__newsletter .mdl-textfield {
+  padding-top: 0 !important; }
+
+/*--------------------------------------------------------------
+# PP Chile theme customisations
+--------------------------------------------------------------*/
+/*
+  Header and Drawer logo
+*/
+header #logo, .mdl-layout__drawer #logo {
+  margin: 0 0 0 0;
+  display: block;
+  background: url(./img/logo.svg) no-repeat;
+  background-size: 55px;
+  height: 55px;
+  font-weight: semi-bold;
+  font-family: 'Open Sans';
+  font-size: 29px;
+  padding: 1px 0 0 60px;
+  color: #000;
+  text-decoration: none;
+  font-weight: bold;
+  line-height: 29px; }
+  header #logo:hover, header #logo:active, .mdl-layout__drawer #logo:hover, .mdl-layout__drawer #logo:active {
+    color: #304C7A; }
+  header #logo span, .mdl-layout__drawer #logo span {
+    color: #4D1DB5;
+    font-weight: normal;
+    font-family: 'Open Sans';
+    line-height: 33px; }
+  header #logo .country, .mdl-layout__drawer #logo .country {
+    font-family: 'Open Sans';
     display: block;
     margin-top: -6px;
     color: #333;

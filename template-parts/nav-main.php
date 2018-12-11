@@ -13,8 +13,8 @@
     <!-- Title -->
     <span class="mdl-layout-title">
         <a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            pirate<span>party</span><br>
-            <span class="country">australia</span>
+            partido<span>pirata</span><br>
+            <span class="country">chile</span>
         </a>
     </span>
 

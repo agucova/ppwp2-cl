@@ -95,6 +95,10 @@ https://raw.githubusercontent.com/google/material-design-lite/mdl-1.x/LICENSE
 @import "base";
 
 /*--------------------------------------------------------------
+# PP Chile theme customisations
+--------------------------------------------------------------*/
+@import "base-ppcl";
+/*--------------------------------------------------------------
 # Material design lite
 --------------------------------------------------------------*/
 @import "../node_modules/material-design-lite/src/material-design-lite";
@@ -103,3 +107,9 @@ https://raw.githubusercontent.com/google/material-design-lite/mdl-1.x/LICENSE
 # PPWP2 theme customisations
 --------------------------------------------------------------*/
 @import "style-ppwp2";
+
+/*--------------------------------------------------------------
+# PP Chile theme customisations
+--------------------------------------------------------------*/
+@import "style-ppcl";
+@import "base-ppcl";
