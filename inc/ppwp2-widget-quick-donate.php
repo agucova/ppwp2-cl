@@ -39,48 +39,47 @@ class ppwp2_widget_quick_donate extends WP_Widget
 		?>
         <div class="pir-card pir-card__quick-donate mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
-                <h2 class="mdl-card__title-text">Quick donate</h2>
+                <h2 class="mdl-card__title-text">Donación rápida</h2>
             </div>
             <div class="mdl-card__supporting-text">
-                <p>We run an efficient ship, but political parties are not cheap to run. Every dollar you donate goes a
-                    long way.</p>
+                <p>Cada peso que donas hace un gran impacto.</p>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <a href="<?php echo($this->uri_for_amount($pin_uri, "5.00")); ?>"
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "1.000")); ?>"
                            class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            $5
+                            $1.000
                         </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <a href="<?php echo($this->uri_for_amount($pin_uri, "10.00")); ?>"
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "5.000")); ?>"
                            class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            $10
+                            $5.000
                         </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <a href="<?php echo($this->uri_for_amount($pin_uri, "25.00")); ?>"
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "10.000")); ?>"
                            class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            $25
+                            $10.000
                         </a>
                     </div>
                 </div>
                 <div class="mdl-grid">
                     <div class="mdl-cell mdl-cell--4-col">
-                        <a href="<?php echo($this->uri_for_amount($pin_uri, "50.00")); ?>"
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "25.000")); ?>"
                            class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            $50
+                            $25.000
                         </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
-                        <a href="<?php echo($this->uri_for_amount($pin_uri, "100.00")); ?>"
+                        <a href="<?php echo($this->uri_for_amount($pin_uri, "50.000")); ?>"
                            class="pin-payment-button pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            $100
+                            $50.000
                         </a>
                     </div>
                     <div class="mdl-cell mdl-cell--4-col">
                         <a href="<?php echo(get_page_by_slug("donate")); ?>"
                            class="pir-button pir-button-block mdl-button mdl-js-button mdl-button--raised mdl-button--colored">
-                            Other
+                            Otro
                         </a>
                     </div>
                 </div>

@@ -29,24 +29,24 @@ class ppwp2_widget_we_are_a_movement extends WP_Widget {
         <div class="pir-card pir-card__we-are mdl-card mdl-shadow--2dp">
             <div class="mdl-card__title">
                 <h2 class="mdl-card__title-text">
-                    <strong>We are</strong> a political movement based around the core tenets of:
+                    <strong>Somos</strong> un partido político basado en los principios de:
                 </h2>
             </div>
             <div class="mdl-card__supporting-text">
                 <ul>
-                    <li>freedom of information and culture</li>
-                    <li>civil and digital liberties</li>
-                    <li>privacy and anonymity</li>
-                    <li>government transparency</li>
-                    <li>participatory democracy</li>
+                    <li>libertad de información y cultura</li>
+                    <li>libertades civiles y digitales</li>
+                    <li>privacidad y anonimidad</li>
+                    <li>transparencia gubernamental</li>
+                    <li>democracia participatoria</li>
                 </ul>
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a href="<?php echo(get_page_by_slug("how-we-began")); ?>" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    How we began
+                    Cómo empezamos
                 </a>
                 <a href="<?php echo(get_page_by_slug("our-vision")); ?>" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Our vision
+                    Nuestra visión
                 </a>
             </div>
         </div>
