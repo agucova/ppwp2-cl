@@ -29,7 +29,7 @@
 					</a>
 					<p>
 						Copyright &copy; <?php echo date("Y"); ?><br>
-						This website is licensed under <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a><br>
+						Está página se encuentra bajo la licencia <a href="https://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0</a><br>
 					</p>
 				</div>
 				<div class="mdl-cell--6-col">

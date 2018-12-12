@@ -11898,14 +11898,14 @@ header #logo, .mdl-layout__drawer #logo {
   font-family: 'Open Sans';
   font-size: 29px;
   padding: 1px 0 0 60px;
-  color: #000;
+  color: #4D1DB5;
   text-decoration: none;
   font-weight: bold;
   line-height: 29px; }
   header #logo:hover, header #logo:active, .mdl-layout__drawer #logo:hover, .mdl-layout__drawer #logo:active {
     color: #304C7A; }
   header #logo span, .mdl-layout__drawer #logo span {
-    color: #4D1DB5;
+    color: #000;
     font-weight: normal;
     font-family: 'Open Sans';
     line-height: 33px; }
@@ -11914,7 +11914,8 @@ header #logo, .mdl-layout__drawer #logo {
     display: block;
     margin-top: -6px;
     color: #333;
-    font-size: .65em; }
+    font-size: .65em;
+    font-weight: 650; }
 
 /*
   Drawer logo positioning section

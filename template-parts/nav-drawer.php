@@ -15,22 +15,22 @@
     </button>
     <span class="mdl-layout-title">
         <a id="logo" href="<?php echo esc_url(home_url('/')); ?>">
-            pirate<span>party</span><br>
-            <span class="country">australia</span>
+        <span>partido</span>pirata<br>
+            <span class="country">chile</span>
         </a>
     </span>
 
     <div class="pir-header-extra" style="text-align: center; margin-top: 16px;">
         <a href="<?php echo(get_page_by_slug("join-us")); ?>" class="pir-button-join mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Join us
+            Únete
         </a>
 
         <a href="<?php echo(get_page_by_slug("donate")); ?>"  class="pir-button-donate mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Donate
+            Dona
         </a>
 
-        <a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Members
+        <a href="/miembros"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Miembros
         </a>
 
     </div>

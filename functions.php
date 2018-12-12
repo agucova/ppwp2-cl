@@ -169,10 +169,10 @@ add_action( 'init', 'check_widget' );
 function f_the_author( $display_name ) {
     // $display_name === string $authordata->display_name
     if ( is_feed() ) {
-        return "Pirate Party Australia";
+        return "Partido Pirata Chile";
     }
 
-    return "Pirate Party Australia";
+    return "Partido Pirata Chile";
 }
 add_filter( 'the_author', 'f_the_author', PHP_INT_MAX, 1 );
 

@@ -39,7 +39,7 @@ class ppwp2_widget_data_retention extends WP_Widget {
             </div>
             <div class="mdl-card__actions mdl-card--border">
                 <a href="<?php echo($read_more_url);?>" class="mdl-button mdl-button--colored mdl-js-button mdl-js-ripple-effect">
-                    Read more
+                    Seguir Leyendo
                 </a>
             </div>
         </div>

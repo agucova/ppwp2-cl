@@ -80,7 +80,7 @@ endif;
  */
 
 function ppwp2_modify_read_more_link() {
-	return '<br><br><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" href="' . get_permalink() . '">'. __( 'Read More', 'mdlwp' ). '</a>';
+	return '<br><br><a class="mdl-button mdl-js-button mdl-button--raised mdl-button--colored mdl-js-ripple-effect" href="' . get_permalink() . '">'. __( 'Seguir Leyendo', 'mdlwp' ). '</a>';
 }
 remove_filter( 'the_content_more_link', 'modify_read_more_link' );
 add_filter( 'the_content_more_link', 'ppwp2_modify_read_more_link' );

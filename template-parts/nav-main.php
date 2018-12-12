@@ -13,7 +13,7 @@
     <!-- Title -->
     <span class="mdl-layout-title">
         <a id="logo" href="<?php echo esc_url( home_url( '/' ) ); ?>">
-            partido<span>pirata</span><br>
+        <span>partido</span>pirata<br>
             <span class="country">chile</span>
         </a>
     </span>
@@ -40,13 +40,13 @@
 
     <div class="pir-header-extra mdl-layout--medium-screen-only">
         <a href="<?php echo(get_page_by_slug("join-us")); ?>" class="pir-button-join mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Join us
+            Únete
         </a>
         <a href="<?php echo(get_page_by_slug("donate")); ?>"  class="pir-button-donate mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Donate
+            Dona
         </a>
-        <a href="https://members.pirateparty.org.au"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
-            Members
+        <a href="/miembros"  class="pir-button-members mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect">
+            Miembros
         </a>
     </div>
 
